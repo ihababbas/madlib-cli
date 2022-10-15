@@ -13,6 +13,7 @@ def read_template(path):
     try:
         with open(path,'r') as story:
             output = story.read().strip()
+            
             return output
     except FileNotFoundError:
         raise FileNotFoundError
